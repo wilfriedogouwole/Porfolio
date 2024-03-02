@@ -5,65 +5,48 @@ export const siteConfig = {
 	description: "Make beautiful websites regardless of your design experience.",
 	navItems: [
 		{
-			label: "Home",
+			label: "Accueil",
 			href: "/",
 		},
     {
-      label: "Docs",
-      href: "/docs",
+      label: "A propos de moi",
+      href: "/",
     },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
+    
     {
       label: "Blog",
-      href: "/blog",
+      href: "/",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Me contacter",
+      href: "/",
     }
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "Accueil",
+			href: "/",
 		},
 		{
-			label: "Dashboard",
-			href: "/dashboard",
+			label: "A propos de moi",
+			href: "/",
 		},
 		{
-			label: "Projects",
-			href: "/projects",
+			label: "Blog",
+			href: "/",
 		},
 		{
-			label: "Team",
-			href: "/team",
+			label: "Me contacter",
+      		href: "/",
 		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
+		
 	],
 	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
+		github: "https://github.com/wilfriedogouwole",
+		/*docs: "https://nextui.org",*/
+		Linkedin: "https://www.linkedin.com/in/derrickogouwole/",
+		Instagram: "",
+		discord: "#",
+        sponsor: "#"
 	},
 };

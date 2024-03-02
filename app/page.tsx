@@ -1,42 +1,41 @@
+import Hero from "@/components/Hero";
+import { subtitle, title } from "@/components/primitives";
+import { siteConfig } from "@/config/site";
+import { Code } from "@nextui-org/code";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code"
 import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
-
 export default function Home() {
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>Make&nbsp;</h1>
-				<h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
+		<>
+			<section>
+				<div className="flexStart">
+					<div className="">
+						<Hero />
+					</div>
+				</div>
+			</section>
+
+		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 " >
+			<div className="inline-block text-center justify-center max-w-3xl">
+				<h5 className={subtitle()}>Qui suis-je ? &nbsp;</h5>
+				<p className={title()}>On m'appelle<span className={title({ color: "violet" })}> Derrick, Chef de projet digital </span>
+				   habitant sur Caen et très passionné des IT. </p>
+				
 				<br />
-				<h1 className={title()}>
-					websites regardless of your design experience.
-				</h1>
-				<h2 className={subtitle({ class: "mt-4" })}>
-					Beautiful, fast and modern React UI library.
-				</h2>
+		
+				<h2 className={subtitle({ class: "mt-4 text-center" })}>
+				Je suis un professionnel passionné par la gestion de projets digitaux et j'ai acquis une solide expertise dans plusieurs domaines clés, notamment en tant que webdesigner, développeur web et gestionnaire de projets digitaux.				</h2>
 			</div>
 
 			<div className="flex gap-3">
 				<Link
 					isExternal
 					href={siteConfig.links.docs}
-					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
+					className={buttonStyles({ color: "danger", radius: "full", variant: "shadow" })}
 				>
-					Documentation
-				</Link>
-				<Link
-					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full" })}
-					href={siteConfig.links.github}
-				>
-					<GithubIcon size={20} />
-					GitHub
-				</Link>
+TÉLÉCHARGER MON CV				</Link>
+				
 			</div>
 
 			<div className="mt-8">
@@ -47,5 +46,10 @@ export default function Home() {
 				</Snippet>
 			</div>
 		</section>
-	);
+		
+	</>
+
+
+)
+	
 }
