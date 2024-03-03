@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import { subtitle, title } from "@/components/primitives";
+import Tabss from "@/components/tabss";
 import { siteConfig } from "@/config/site";
-import { Code } from "@nextui-org/code";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { button as buttonStyles } from "@nextui-org/theme";
@@ -41,15 +41,13 @@ TÉLÉCHARGER MON CV				</Link>
 			<div className="mt-8">
 				<Snippet hideSymbol hideCopyButton variant="flat">
 					<span>
-						Get started by editing <Code color="primary">app/page.tsx</Code>
+					<Tabss />
 					</span>
 				</Snippet>
 			</div>
 		</section>
 		
 	</>
-
-
 )
 	
 }
